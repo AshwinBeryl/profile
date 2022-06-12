@@ -1,3 +1,4 @@
+from encodings.utf_8 import encode
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
