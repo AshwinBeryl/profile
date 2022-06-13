@@ -40,8 +40,8 @@ html_code = """
 <head>
     <!-- <script src="D:\PythonProj\profile\static/prof_scroll.js"></script> -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.min.js"></script>
-    <script src="{0}\html2pdf.js"></script>
-    <link rel="stylesheet" href="{0}\prof.css">
+    <script src="\html2pdf.js"></script>
+    <link rel="stylesheet" href="\prof.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
