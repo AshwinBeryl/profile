@@ -4,6 +4,7 @@ basedir = r"D:\PythonProj\profile"
 staticdir = r"..\static"
 inputdir = r"..\input"
 outputdir = r"..\output"
+templatedir = r"..\templates"
 
 experience_dict = {}
 
@@ -58,6 +59,6 @@ html_code = """
 </html>
 """.format(staticdir, "\n".join(to_html))
 
-outfile = open(basedir + "/ashwinberyl.html","w", encoding="latin1")
+outfile = open(templatedir + "/ashwinberyl.html","w", encoding="latin1")
 outfile.write(html_code)
 outfile.close()
