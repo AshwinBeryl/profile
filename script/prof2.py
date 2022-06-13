@@ -1,9 +1,9 @@
 import pandas as pd
 
 basedir = r"D:\PythonProj\profile"
-staticdir = r"D:\PythonProj\profile\static"
-inputdir = r"D:\PythonProj\profile\input"
-outputdir = r"D:\PythonProj\profile\output"
+staticdir = r"..\static"
+inputdir = r"..\input"
+outputdir = r"..\output"
 
 experience_dict = {}
 
