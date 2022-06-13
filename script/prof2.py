@@ -10,7 +10,7 @@ experience_dict = {}
 
 to_html = []
 
-df = pd.read_csv(inputdir + "/test.csv", encoding="latin1")
+df = pd.read_csv(inputdir + r"\test.csv", encoding="latin1")
 df.fillna("",inplace=True)
 for column in df.columns:
     if column == "Summary":
@@ -40,8 +40,8 @@ html_code = """
 <head>
     <!-- <script src="D:\PythonProj\profile\static/prof_scroll.js"></script> -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.min.js"></script>
-    <script src="{0}/html2pdf.js"></script>
-    <link rel="stylesheet" href="{0}/prof.css">
+    <script src="{0}\html2pdf.js"></script>
+    <link rel="stylesheet" href="{0}\prof.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -59,6 +59,6 @@ html_code = """
 </html>
 """.format(staticdir, "\n".join(to_html))
 
-outfile = open(templatedir + "/ashwinberyl.html","w", encoding="latin1")
+outfile = open(templatedir + r"\ashwinberyl.html","w", encoding="latin1")
 outfile.write(html_code)
 outfile.close()
