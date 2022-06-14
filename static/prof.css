@@ -35,9 +35,9 @@
             background-image: url('https://media.istockphoto.com/photos/simple-dark-podium-platform-for-product-presentation-3d-render-picture-id1326920716?b=1&k=20&m=1326920716&s=170667a&w=0&h=g9zVUtguoDsX1gdFt_t6OFwZaGrVWXQPO53DhVF_yD0='); 
             background-attachment: fixed;
             font-size: 17px;
-            @media screen and (max-width: $desktop) and (min-width:$tablet){
+            /* @media screen and (max-width: $desktop) and (min-width:$tablet){
                 background:white;
-            }
+            } */
 
         }
 
