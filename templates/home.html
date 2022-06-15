@@ -10,7 +10,7 @@
             <div class="navbar">
                 <img src="../static/images/home.png" alt="Home" class="home">
                 <nav>
-                    <ul>
+                    <ul id="menu-list">
                         <li><a href="">Projects</a></li>
                         <li><a href="">Education</a></li>
                         <li><a href="">Experience</a></li>
@@ -18,19 +18,42 @@
                         <li><a href="">Contact</a></li>
                     </ul>
                 </nav>
-                <img src="../static/images/menu.png" alt="Menu" class="menu-icon">
+                <img src="../static/images/menu.png" alt="Menu" class="menu-icon" onclick="togglemenu()">
             </div>
             <div class="row">
                 <div class="col-1">
                     <h2>A Software Engineer<br>and Learner</h2>
                     <h3>Passionate Programmer</h3>
-                    <p>Enovia PLM, Python, Web Development</p>
+                    <p>Enovia PLM, Python Programming, Web Development</p>
                     <h4>Dashboards and Analytics</h4>
                     <button type="button">Download Resume<img src="../static/images/arrow.png"></button>
                 </div>
                 <div class="col-2">
+                    <img src="../static/images/photo.png" alt="photo" class="photo">
+                    <div class="color-box"></div>
+                </div>
+            </div>
+            <div>
+                <div class="social-links">
+                    <img src="../static/images/fb.png" alt="fb">
+                    <img src="../static/images/tw.png" alt="tw">
+                    <img src="../static/images/ig.png" alt="ig">
                 </div>
             </div>
         </div>
+        <script>
+            var menuList = document.getElementById("menu-list");
+            menuList.style.maxHeight = "0px";
+            function togglemenu(){
+                if(menuList.style.maxHeight == "0px")
+                    {
+                    menuList.style.maxHeight = "150px";
+                    }
+                else
+                    {
+                    menuList.style.maxHeight = "0px";
+                    }
+            }
+        </script>
     </body>
 </html>
