@@ -8,7 +8,7 @@
     <body>
         <div class="container">
             <div class="navbar">
-                <img src="../static/images/home.png" alt="Home" class="home">
+                <img src="../static/images/menu.png" alt="Menu" class="menu-icon" onclick="togglemenu()">
                 <nav>
                     <ul id="menu-list">
                         <li><a href="">Projects</a></li>
@@ -18,7 +18,7 @@
                         <li><a href="">Contact</a></li>
                     </ul>
                 </nav>
-                <img src="../static/images/menu.png" alt="Menu" class="menu-icon" onclick="togglemenu()">
+                <img src="../static/images/search.png" alt="Search" class="search">
             </div>
             <div class="row">
                 <div class="col-1">
@@ -48,6 +48,7 @@
                 if(menuList.style.maxHeight == "0px")
                     {
                     menuList.style.maxHeight = "150px";
+                    menuList.style.maxWidth = "150px";
                     }
                 else
                     {

@@ -19,8 +19,8 @@
     align-items: center;
 }
 
-.home{
-    width: 25px;
+.search{
+    width: 20px;
     cursor: pointer;
     margin: 30px 0;
 }
@@ -161,18 +161,24 @@ button:hover {
 }
 
 @media only screen and (max-width:700px){
+
+    nav{
+        text-align: left;
+    }
     nav ul{
         width: 100%;
         background: linear-gradient(blueviolet, #fb5283);
         position: absolute;
         top: 75px;
-        right: 0;
+        left: 0;
         z-index: 2;
     }
     nav ul li{
         display: block;
         margin-top: 10px;
         margin-bottom: 10px;
+        list-style: none;
+        margin-left: 30px;
     }
     nav ul li a{
         color: #fff;
